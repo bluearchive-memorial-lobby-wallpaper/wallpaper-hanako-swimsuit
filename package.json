@@ -1,0 +1,12 @@
+{
+  "name": "hanako-swimsuit-wallpaper",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "dependencies": {
+    "ba-memorial-lobby-wallpaper-runtime": "^0.4.0"
+  }
+}

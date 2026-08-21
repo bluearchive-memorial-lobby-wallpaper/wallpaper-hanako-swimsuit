@@ -1,0 +1,74 @@
+{
+  "schemaVersion": 1,
+  "project": {
+    "id": "wallpaper-hanako-swimsuit",
+    "entry": "src/main.ts"
+  },
+  "runtime": {
+    "package": "ba-memorial-lobby-wallpaper-runtime",
+    "range": "^0.4.0"
+  },
+  "content": {
+    "studentId": "hanako",
+    "variantId": "swimsuit"
+  },
+  "resources": {
+    "model": {
+      "sourceTier": "2k",
+      "outputTiers": [
+        "2k",
+        "4k",
+        "8k"
+      ]
+    },
+    "preview": true,
+    "voice": {
+      "locales": [
+        "zh-cn",
+        "ja",
+        "ko"
+      ]
+    },
+    "source": {
+      "provider": "kivo",
+      "voiceFields": {
+        "ja": "voice",
+        "zh-cn": "voice_cn",
+        "ko": "voice_kr"
+      }
+    }
+  },
+  "structure": {
+    "requiredFiles": [
+      "src/main.ts",
+      "src/config.ts",
+      "public/project.json",
+      "public/preview.gif",
+      "README.md",
+      ".gitignore"
+    ],
+    "validateHtmlShell": true,
+    "validatePreview": true,
+    "validateChecksums": false
+  },
+  "build": {
+    "outputDirectory": "dist",
+    "logRoute": "/__wallpaper-log",
+    "target": "chrome90"
+  },
+  "distribution": {
+    "requiredFiles": [
+      "index.html",
+      "logging-bootstrap.js",
+      "preview.gif"
+    ],
+    "previewPath": "preview.gif",
+    "previewWidth": 192,
+    "previewHeight": 192,
+    "previewMaxBytes": 1000000,
+    "validatePreview": true
+  },
+  "package": {
+    "archiveName": "hanako-swimsuit-wallpaper.zip"
+  }
+}
